@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Text Processor",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "tabs",
+     "scripting"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["popup/response_popup.html", "loading_popup.html","dist/token_bundle.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "validify.png"
+  },
+  "content_scripts": [
+    {
+      "type": "module",
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+"host_permissions": [
+   "https://library-nd.libguides.com/*",
+   "https://www.google.com/*"
+],
+  "icons": {
+    "16": "validify.png",
+    "48": "validify.png",
+    "128": "validify.png"
+  }
+}

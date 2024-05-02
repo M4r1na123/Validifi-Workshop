@@ -1,0 +1,75 @@
+body {
+    width: 500px;
+    overflow: hidden;
+    padding: 0px;
+    background-color: rgb(27, 51, 62); /* Background color set to light blue */
+  }
+  #response {
+    color:rgb(27, 51, 62);
+    word-wrap: break-word;
+    font-size: 18px; /* Increase font size for better readability */
+    white-space: pre-wrap;
+  }
+  #Validifi {
+    text-align: center;
+    font-size: 22px;
+    margin: 5px;
+    font-weight: normal;
+    color: rgb(18, 99, 213);
+  }
+  #f_bug {
+    text-align: left;
+    font-size: 18px;
+    margin: 5px;
+    font-weight: normal;
+    color: rgb(86, 66, 187);
+  }
+  #report-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #report-container > button {
+    color: rgb(18, 99, 213);
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 8px;
+    font-weight: bold;
+    width: 75px;
+    cursor: pointer;
+  }
+
+  #response-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin: -15px;
+    padding: 5px;
+  }
+
+  .popup-container {
+    width: 480px;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightblue; /* Background color set to light blue */
+  }
+
+  #report_textbox {
+    color:rgb(27, 51, 62);
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px;
+    width: 370px;
+    resize:vertical;
+    cursor: pointer;
+  }
